@@ -2,7 +2,7 @@
 
 const controller = require('./controller')
 
-async function RoutePegawai(router) {
+function RoutePegawai(router) {
   router.get('/pegawai', controller.fetchAll)
   router.get('/pegawai/:id', controller.fetchDetail)
   router.post('/pegawai', controller.store)

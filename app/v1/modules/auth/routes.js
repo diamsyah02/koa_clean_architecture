@@ -2,7 +2,7 @@
 
 const controller = require('./controller')
 
-async function RouteAuth(router) {
+function RouteAuth(router) {
   router.post('/register', controller.register)
   router.post('/login', controller.login)
 }
